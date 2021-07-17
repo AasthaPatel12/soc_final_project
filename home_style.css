@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* .back{
+    background: rgba(0, 0, 0, 0.2) url("./image/manga.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+} */
+#ele li a:hover{
+    color: grey;
+}
+
+#log img{
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: 1.5s;
+    cursor: pointer;
+}
+#log img:hover {
+    transform: rotate(360deg);
+}
+.btn-primary:hover{
+    border: 2px solid white;
+}
+
+.carousel-item img{
+    height: 600px;
+}
+.carousel-item h1{
+    font-size: 90px;
+    transition: 1s;
+    /* border: 2px solid blue; */
+    display: block;
+}
+
+  /* animation */
+  .carousel-item h1{
+    position: relative;
+    top: -40rem;
+    animation: drop 1s ease-in forwards;
+  }
+  @keyframes drop {
+    0%{}
+    70%{transform: translateY(45rem);}
+    100%{transform: translateY(40rem);}
+  }
+
+
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+.left img{
+    height: 400px;
+    width: 380px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.right{
+    font-size: 25px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+}
+.right a{
+    text-decoration: none;
+}
