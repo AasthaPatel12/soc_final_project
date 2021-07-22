@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 *{
     margin: 0;
@@ -36,10 +36,12 @@
     height: 600px;
 }
 .imp1{
-    font-size: 90px;
+    font-size: 80px;
     transition: 1s;
     /* border: 2px solid blue; */
     display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 .imp{
     display: none;
@@ -88,6 +90,56 @@
     text-decoration: none;
 }
 
+.nav-list {
+    display: flex;
+    align-items: center;
+    width: 75%;
+
+    /* background-color: black; */
+  }
+
+  .nav-list li {
+    list-style: none;
+    padding: 15px 20px;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav-list li a:hover {
+    text-decoration: underline;
+    color: grey;
+  }
+
+.footer{
+    background-color: rgb(143, 138, 138);
+    
+}
+.last1{
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.social li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+.last{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
 
 /* responsive */
 @media screen and (max-width: 1350px){
@@ -98,9 +150,20 @@
         margin-right: 80px;
     }
 }
+.active{
+    color: white;
+}
 @media screen and (max-width: 1265px){
     .left img{
         width: 70vw;
+    }
+}
+@media screen and (max-width: 950px) {
+    .nav-list {
+      flex-direction: column;
+    }
+    .nav-list li a {
+      font-weight: bold;
     }
 }
 @media screen and (max-width: 764px){
